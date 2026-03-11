@@ -1369,7 +1369,7 @@ ${navigation('contact')}
               <h3 class="font-semibold mb-1">Headquarters</h3>
               <p class="text-platinum-400">11335 NE 122nd Way, Suite 105</p>
               <p class="text-platinum-400">Kirkland, Washington 98034</p>
-              <p class="text-platinum-500 text-sm mt-2">Also serving: Seattle, Atlanta, New York, Philadelphia</p>
+
             </div>
           </div>
         </div>
@@ -1394,9 +1394,7 @@ ${navigation('contact')}
             <a href="#" class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center text-platinum-400 hover:bg-gold-500 hover:text-black transition-all">
               <i class="fab fa-instagram text-lg"></i>
             </a>
-            <a href="#" class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center text-platinum-400 hover:bg-gold-500 hover:text-black transition-all">
-              <i class="fab fa-facebook-f text-lg"></i>
-            </a>
+
           </div>
         </div>
       </div>
