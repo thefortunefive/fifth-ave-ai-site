@@ -1352,17 +1352,6 @@ ${navigation('contact')}
         <div class="space-y-8">
           <div class="flex items-start space-x-4">
             <div class="w-14 h-14 bg-gold-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-envelope text-xl text-gold-500"></i>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-1">Email Us</h3>
-              <p class="text-platinum-400">hello@fifthaveai.com</p>
-              <p class="text-platinum-500 text-sm">We'll respond within 24 hours</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="w-14 h-14 bg-gold-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
               <i class="fas fa-phone text-xl text-gold-500"></i>
             </div>
             <div>
