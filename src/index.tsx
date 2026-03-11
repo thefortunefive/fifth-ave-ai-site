@@ -686,7 +686,7 @@ ${navigation('home')}
           
           <div class="mt-8 pt-6 border-t border-gold-500/20 w-full max-w-xs">
             <p class="text-platinum-500 text-xs uppercase tracking-wider mb-2">Investment Starting At</p>
-            <p class="text-3xl font-display font-bold text-gold-500">$500,000+</p>
+            <p class="text-3xl font-display font-bold text-gold-500">$25,000+</p>
             <p class="text-platinum-500 text-sm mt-1">Tailored to your business scope</p>
           </div>
           
