@@ -217,7 +217,7 @@ const footer = `
       </div>
     </div>
     <div class="border-t border-zinc-800 mt-12 pt-8 text-center">
-      <p class="text-platinum-500 text-sm">&copy; ${new Date().getFullYear()} Fifth Ave AI. All rights reserved.</p>
+      <p class="text-platinum-500 text-sm">&copy; 2026 Fifth Ave AI. All rights reserved.</p>
     </div>
   </div>
 </footer>
