@@ -148,9 +148,6 @@ const navigation = (currentPage: string) => `
         <a href="/services" class="nav-link text-sm font-medium ${currentPage === 'services' ? 'text-gold-500' : 'text-platinum-300 hover:text-gold-500'} transition-colors">Services</a>
         <a href="/about" class="nav-link text-sm font-medium ${currentPage === 'about' ? 'text-gold-500' : 'text-platinum-300 hover:text-gold-500'} transition-colors">About</a>
         <a href="/contact" class="nav-link text-sm font-medium ${currentPage === 'contact' ? 'text-gold-500' : 'text-platinum-300 hover:text-gold-500'} transition-colors">Contact</a>
-        <a href="/contact" class="px-6 py-2.5 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-full hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/25">
-          Get Started
-        </a>
       </div>
       <button id="mobile-menu-btn" class="md:hidden text-platinum-300" onclick="toggleMobileMenu()">
         <i id="menu-icon" class="fas fa-bars text-xl"></i>
@@ -162,7 +159,6 @@ const navigation = (currentPage: string) => `
         <a href="/services" class="block py-3 px-2 text-platinum-300 hover:text-gold-500 hover:bg-zinc-800/50 rounded-lg transition-all">Services</a>
         <a href="/about" class="block py-3 px-2 text-platinum-300 hover:text-gold-500 hover:bg-zinc-800/50 rounded-lg transition-all">About</a>
         <a href="/contact" class="block py-3 px-2 text-platinum-300 hover:text-gold-500 hover:bg-zinc-800/50 rounded-lg transition-all">Contact</a>
-        <a href="/contact" class="block py-3 px-4 mt-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-full text-center">Get Started</a>
       </div>
     </div>
   </div>
