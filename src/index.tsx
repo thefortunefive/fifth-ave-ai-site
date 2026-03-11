@@ -1373,21 +1373,20 @@ ${navigation('contact')}
             </div>
             <div>
               <h3 class="font-semibold mb-1">Call Us</h3>
-              <p class="text-platinum-400">(555) 123-4567</p>
-              <p class="text-platinum-500 text-sm">Mon-Fri, 9am-6pm EST</p>
+              <p class="text-platinum-400">(425) 316-7268</p>
+              <p class="text-platinum-500 text-sm">Mon-Fri, 9am-6pm PST</p>
             </div>
           </div>
-          
+
           <div class="flex items-start space-x-4">
             <div class="w-14 h-14 bg-gold-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
               <i class="fas fa-map-marker-alt text-xl text-gold-500"></i>
             </div>
             <div>
-              <h3 class="font-semibold mb-1">Our Offices</h3>
-              <p class="text-platinum-400">Seattle, WA</p>
-              <p class="text-platinum-400">Atlanta, GA</p>
-              <p class="text-platinum-400">New York, NY</p>
-              <p class="text-platinum-400">Philadelphia, PA</p>
+              <h3 class="font-semibold mb-1">Headquarters</h3>
+              <p class="text-platinum-400">11335 NE 122nd Way, Suite 105</p>
+              <p class="text-platinum-400">Kirkland, Washington 98034</p>
+              <p class="text-platinum-500 text-sm mt-2">Also serving: Seattle, Atlanta, New York, Philadelphia</p>
             </div>
           </div>
         </div>
