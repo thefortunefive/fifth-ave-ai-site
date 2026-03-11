@@ -1311,44 +1311,38 @@ ${navigation('contact')}
       <!-- Contact Form -->
       <div class="bg-zinc-900 rounded-2xl p-8 md:p-12 border border-zinc-800">
         <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
-        <form class="space-y-6">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-sm font-medium text-platinum-300 mb-2">First Name</label>
-              <input type="text" class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="John">
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-platinum-300 mb-2">Last Name</label>
-              <input type="text" class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="Doe">
-            </div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" id="contact-form">
+          <input type="hidden" name="access_key" value="c24f829f-9c1f-4f19-8925-31e56d3f03da">
+          <input type="hidden" name="redirect" value="https://fifthaveai.pages.dev/contact?success=true">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div>
+            <label class="block text-sm font-medium text-platinum-300 mb-2">Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="Your Name">
           </div>
           <div>
             <label class="block text-sm font-medium text-platinum-300 mb-2">Email</label>
-            <input type="email" class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="john@example.com">
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-platinum-300 mb-2">Company</label>
-            <input type="text" class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="Your Company">
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-platinum-300 mb-2">Service Interested In</label>
-            <select class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-              <option value="">Select a service</option>
-              <option value="email">AI Email Assistant</option>
-              <option value="video">AI Avatar Video Ads</option>
-              <option value="website">AI-Powered Website</option>
-              <option value="social">Social Media Management</option>
-              <option value="other">Other / Multiple Services</option>
-            </select>
+            <input type="email" name="email" required class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="john@example.com">
           </div>
           <div>
             <label class="block text-sm font-medium text-platinum-300 mb-2">Message</label>
-            <textarea rows="4" class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="Tell us about your project..."></textarea>
+            <textarea name="message" rows="4" required class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-platinum-500 focus:outline-none focus:border-gold-500 transition-colors" placeholder="Tell us about your project..."></textarea>
           </div>
           <button type="submit" class="w-full py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/25">
             Send Message <i class="fas fa-paper-plane ml-2"></i>
           </button>
         </form>
+        
+        <!-- Success Message -->
+        <div id="success-message" class="hidden mt-6 p-6 bg-green-500/10 border border-green-500/30 rounded-lg">
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+            <div>
+              <h3 class="font-semibold text-green-400">Message Sent!</h3>
+              <p class="text-platinum-400 text-sm mt-1">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
       </div>
       
       <!-- Contact Info -->
@@ -1420,6 +1414,18 @@ ${navigation('contact')}
     </div>
   </div>
 </section>
+
+<script>
+  // Show success message if redirected back from Web3Forms
+  if (window.location.search.includes('success=true')) {
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-message');
+    if (form) form.style.display = 'none';
+    if (successMsg) successMsg.classList.remove('hidden');
+    // Clean up URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
 
 ${footer}
 `
